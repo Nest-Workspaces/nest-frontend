@@ -43,7 +43,7 @@ const HeroSection = () => {
           <div className='space-y-6'>
             <h1 className='text-5xl lg:text-7xl font-bold text-white leading-tight'>
               Designed for Focus. <br />
-              <span className='block text-yellow-400'>Built for Growth.</span>
+              <span className='block text-[#ffc622]'>Built for Growth.</span>
             </h1>
 
             {/* Badge */}
@@ -70,24 +70,26 @@ const HeroSection = () => {
               <Button
                 variant='ghost'
                 size='lg'
-                className='px-8 py-4 text-lg font-semibold rounded-full
-                 border border-white/30 text-white shadow-md
-                 bg-white/5 backdrop-blur-md'
+                className='min-w-[180px] px-6 py-3 text-lg font-semibold rounded-full
+    border border-white/30 text-black bg-white shadow-md 
+    transition-all duration-300
+    hover:bg-white/5 hover:text-white'
               >
                 Get Started
                 <ArrowRight className='ml-1 h-5 w-5' />
               </Button>
             </Link>
-
-            <Button
-              variant='ghost'
-              size='lg'
-              className='px-8 py-4 text-lg font-semibold rounded-full
-               border border-white/30 text-white shadow-md
-               bg-white/5 backdrop-blur-md'
-            >
-              Explore Spaces
-            </Button>
+            <Link href='#'>
+              <Button
+                variant='ghost'
+                size='lg'
+                className='min-w-[180px] px-6 py-3 text-lg font-semibold rounded-full
+    border border-white/30 text-white shadow-md
+    bg-white/5 backdrop-blur-md'
+              >
+                Explore Spaces
+              </Button>
+            </Link>
           </div>
 
           {/* Stats */}

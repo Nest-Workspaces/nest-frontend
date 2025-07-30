@@ -28,25 +28,25 @@ const Header = () => {
           <div className='hidden md:flex items-center space-x-8'>
             <Link
               href='/'
-              className='text-white hover:text-yellow-300 transition-colors'
+              className='text-white hover:text-yellow-300 transition-colors font-medium'
             >
               Home
             </Link>
             <Link
               href='/#features'
-              className='text-white hover:text-yellow-300 transition-colors'
+              className='text-white hover:text-yellow-300 transition-colors font-medium'
             >
               Features
             </Link>
             <Link
               href='/#pricing'
-              className='text-white hover:text-yellow-300 transition-colors'
+              className='text-white hover:text-yellow-300 transition-colors font-medium'
             >
               Pricing
             </Link>
             <Link
               href='/#about'
-              className='text-white hover:text-yellow-300 transition-colors'
+              className='text-white hover:text-yellow-300 transition-colors font-medium'
             >
               About
             </Link>

@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import { Slot } from "@radix-ui/react-slot";
 import { cva, VariantProps } from "class-variance-authority";
 import React from "react";
-
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 interface RainbowButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
 
@@ -13,7 +13,7 @@ const rainbowButtonVariants = cva(
     "rounded-sm outline-none focus-visible:ring-[3px] aria-invalid:border-destructive",
     "text-sm font-medium whitespace-nowrap",
     "disabled:pointer-events-none disabled:opacity-50",
-    "[&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 [&_svg]:shrink-0",
+    "[&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 [&_svg]:shrink-0"
   ),
   {
     variants: {
@@ -34,7 +34,7 @@ const rainbowButtonVariants = cva(
       variant: "default",
       size: "default",
     },
-  },
+  }
 );
 
 interface RainbowButtonProps
@@ -48,13 +48,13 @@ const RainbowButton = React.forwardRef<HTMLButtonElement, RainbowButtonProps>(
     const Comp = asChild ? Slot : "button";
     return (
       <Comp
-        data-slot="button"
+        data-slot='button'
         className={cn(rainbowButtonVariants({ variant, size, className }))}
         ref={ref}
         {...props}
       />
     );
-  },
+  }
 );
 
 RainbowButton.displayName = "RainbowButton";
